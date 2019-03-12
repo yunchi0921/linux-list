@@ -10,7 +10,7 @@ int main(void)
     struct listitem *item, *is = NULL;
     size_t i;
 
-    INIT_LIST_HEAD(&testlist);
+    INIT_LIST_HEAD(&testlist);  //將testlist->next testlist->prev 都指向自己
 
     assert(list_empty(&testlist));
 
